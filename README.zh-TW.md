@@ -75,6 +75,25 @@ Olist Brazilian E-Commerce Public Dataset
 * 顧客分析（Customer Analytics）
 * 營運分析（Operational Analytics）
 
+### 資料集取得方式
+
+原始資料集可於 Kaggle 公開取得。
+
+由於 GitHub 儲存空間限制，本專案不包含原始資料檔案。
+
+資料集來源：
+
+https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+下載完成後，請將所有 CSV 檔案放置於：
+
+```text
+data/raw/
+```
+本專案提供完整的資料處理流程，系統將自動建立 DuckDB 資料庫、Star Schema 資料模型，以及後續分析所需的資料集。
+
+使用者僅需下載原始資料並放置於指定目錄，即可重現完整分析流程。
+
 ---
 
 ## 資料架構設計
@@ -99,6 +118,7 @@ Olist Brazilian E-Commerce Public Dataset
 * Seller Dimension
 
 透過將交易事實資料（Fact Tables）與描述性維度資料（Dimension Tables）分離，提升分析彈性與查詢效率。
+此架構亦能支援大型資料聚合運算，並作為商業報表、顧客分析與 KPI 計算的基礎架構。
 
 ![Star Schema](assets/images/star_schema.png)
 
@@ -115,6 +135,8 @@ Olist Brazilian E-Commerce Public Dataset
 ![Customer Analytics](assets/images/customer_analytics.png)
 
 ### Dashboard 操作示範
+
+以下 GIF 示範 Power BI Dashboard 的操作流程，包含 KPI 指標瀏覽、顧客分群分析、營收分析與 Cohort 留存分析等功能。
 
 ![Dashboard Demo](assets/demo/dashboard_demo.gif)
 
@@ -314,6 +336,45 @@ Health & Beauty 為營收最高商品類別。
 
 ---
 
+## 分析成果產出（Analytics Results）
+
+本專案產出多項可直接支援商業決策的分析成果：
+
+| 分析成果                    | 說明                           |
+| ----------------------- | ---------------------------- |
+| Executive KPI Summary   | 營收、訂單數、顧客數、客單價、評價分數與延遲率等核心指標 |
+| Revenue Analysis        | 月營收趨勢分析與州別營收表現分析             |
+| Customer Segmentation   | RFM 顧客分群與營收貢獻分析              |
+| Cohort Analysis         | 顧客留存率分析                      |
+| Customer Value Analysis | 顧客價值分布與營收集中度分析               |
+| Statistical Validation  | 配送績效與顧客滿意度之統計假設檢定            |
+| Executive Insights      | 商業成長與留存改善建議                  |
+
+上述分析成果皆已匯出為可重複使用之分析資料集，並整合至 Power BI Dashboard 中供管理決策使用。
+
+---
+
+## 專案特色（Repository Features）
+
+本專案以可重現（Reproducible Analytics Project）為設計核心。
+
+主要特色包含：
+
+* DuckDB 自動化資料庫建置
+* Star Schema 分析模型
+* 資料品質驗證機制
+* KPI 計算流程
+* 顧客分析流程
+* 統計假設檢定流程
+* Power BI Dataset 產出
+* Data Dictionary 文件化
+* 模組化 Python 分析腳本
+* Git 版本控制管理
+
+透過本專案提供的流程，使用者可從原始資料開始完整重建分析結果與 Dashboard。
+
+---
+
 ## 未來優化方向
 
 ### 進階分析
@@ -350,9 +411,9 @@ Data Analyst | SQL | Python | Power BI | Customer Analytics | Business Intellige
 
 現職：
 
-Data Analyst（Industrial Analytics & AI Applications）
+Data Analyst (Industrial Analytics & AI Applications)
 
-Taiwan Power Research Institute
+Supporting Taiwan Power Research Institute Projects
 
 ### Connect
 

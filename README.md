@@ -75,6 +75,25 @@ Olist Brazilian E-Commerce Public Dataset
 - Customer Analytics
 - Operational Analytics
 
+### Dataset Access
+
+The original dataset is publicly available on Kaggle.
+
+Due to repository size considerations, raw data files are not included in this repository.
+
+Dataset source:
+
+https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+After downloading the dataset, place the CSV files under:
+
+```text
+data/raw/
+```
+
+The project pipeline will automatically build the DuckDB database and analytical data model.
+
+
 ---
 
 ## Data Architecture
@@ -117,6 +136,8 @@ The architecture separates transactional facts from descriptive dimensions, enab
 ![Customer Analytics](assets/images/customer_analytics.png)
 
 ### Interactive Dashboard Demo
+
+The GIF below demonstrates dashboard navigation, KPI exploration, customer segmentation analysis, and cohort retention reporting.
 
 ![Dashboard Demo](assets/demo/dashboard_demo.gif)
 
@@ -302,6 +323,28 @@ The project produces the following analytical outputs:
 
 ---
 
+## Repository Features
+
+This repository is designed as a reproducible analytics project.
+
+Key features include:
+
+* Automated database creation using DuckDB
+* Star schema analytical data model
+* Data quality validation framework
+* KPI calculation pipelines
+* Customer analytics workflows
+* Statistical hypothesis testing
+* Power BI dataset generation
+* Data dictionary documentation
+* Modular Python analytics scripts
+* Version-controlled analytics workflow
+
+The entire analysis can be reproduced from raw data ingestion through dashboard generation using the provided scripts.
+
+---
+
+
 ## Technology Stack
 
 ### Programming
@@ -317,7 +360,7 @@ The project produces the following analytical outputs:
 
 ### Data Warehouse
 
-* DuckDB
+* DuckDB (Embedded Analytical Database)
 
 ### Business Intelligence
 
@@ -389,6 +432,25 @@ Delayed orders received significantly lower review scores than on-time deliverie
 
 ---
 
+## Analytics Results
+
+The analysis produced several business-ready outputs that can support executive decision-making:
+
+| Output                  | Description                                                          |
+| ----------------------- | -------------------------------------------------------------------- |
+| Executive KPI Summary   | Revenue, Orders, Customers, AOV, Review Score, Delay Rate            |
+| Revenue Analysis        | Monthly revenue trends and state-level revenue performance           |
+| Customer Segmentation   | RFM customer segmentation and revenue contribution analysis          |
+| Cohort Analysis         | Customer retention trends across acquisition cohorts                 |
+| Customer Value Analysis | Customer lifetime value and revenue concentration analysis           |
+| Statistical Validation  | Hypothesis testing on delivery performance and customer satisfaction |
+| Executive Insights      | Actionable business recommendations for growth and retention         |
+
+These outputs were exported as reusable analytical datasets and integrated into Power BI dashboards for stakeholder reporting.
+
+
+---
+
 ## Future Improvements
 
 ### Advanced Analytics
@@ -421,6 +483,7 @@ Delayed orders received significantly lower review scores than on-time deliverie
 ecommerce-growth-analysis/
 │
 ├── assets/
+│   ├── demo/
 │   └── images/
 │
 ├── dashboard/
@@ -526,6 +589,22 @@ Dashboard pages:
 
 ---
 
+## External Links
+
+### GitHub Repository
+
+https://github.com/Noahpeng829/ecommerce-growth-analysis
+
+### Power BI Dashboard
+
+Power BI Service deployment is currently in progress.
+
+### LinkedIn
+
+https://www.linkedin.com/in/noah-peng-7896b9374/
+
+---
+
 ## Author
 
 Noah Peng
@@ -536,15 +615,12 @@ National Taipei University
 
 Current Role
 
-Data Analyst (Industrial Analytics & AI Applications)
+Data Analyst
 
-Taiwan Power Research Institute
+Supporting Taiwan Power Research Institute Projects
 
-GitHub: 
-https://github.com/Noahpeng829
 
-LinkedIn: 
-https://www.linkedin.com/in/noah-peng-7896b9374/
+GitHub: https://github.com/Noahpeng829
 
-```
-```
+LinkedIn: https://www.linkedin.com/in/noah-peng-7896b9374/
+
