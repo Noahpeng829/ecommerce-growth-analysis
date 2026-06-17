@@ -145,11 +145,24 @@ The GIF below demonstrates dashboard navigation, KPI exploration, customer segme
 
 ## Live Dashboard
 
-Interactive Power BI Dashboard
+## Dashboard Access
 
-> Power BI Service deployment is currently in progress.
->
-> The dashboard will be published as an interactive web application in a future update.
+The interactive dashboard is provided as a Power BI Desktop (.pbix) file within this repository.
+
+Users can explore all visualizations, filters, and analytics features by opening:
+
+dashboard/ecommerce_revenue_growth_dashboard.pbix
+
+The dashboard includes:
+
+- Executive Overview
+- Customer Analytics
+- KPI Monitoring
+- Cohort Retention Analysis
+- RFM Customer Segmentation
+- Revenue Distribution Analysis
+
+A Power BI Service deployment may be considered in future updates.
 
 ---
 

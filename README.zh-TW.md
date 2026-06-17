@@ -144,9 +144,22 @@ data/raw/
 
 ## Dashboard
 
-Power BI 互動式商業儀表板
+本專案提供 Power BI Desktop (.pbix) 儀表板檔案。
 
-目前正在規劃 Power BI Service 部署，未來將提供線上互動版本。
+使用者可直接開啟：
+
+dashboard/ecommerce_revenue_growth_dashboard.pbix
+
+查看完整分析成果，包含：
+
+- Executive Overview
+- Customer Analytics
+- KPI 指標監控
+- Cohort 留存分析
+- RFM 顧客分群
+- 營收分布分析
+
+未來將視需求評估 Power BI Service 線上部署。
 
 ---
 
