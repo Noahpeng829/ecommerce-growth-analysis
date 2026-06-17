@@ -1,0 +1,11 @@
+data/raw/
+data/processed/
+database/*.duckdb
+*.csv
+*.xlsx
+*.pbix
+__pycache__/
+.env
+.venv/
+.ipynb_checkpoints/
+*.pyc
