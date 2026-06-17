@@ -143,8 +143,6 @@ The GIF below demonstrates dashboard navigation, KPI exploration, customer segme
 
 ---
 
-## Live Dashboard
-
 ## Dashboard Access
 
 The interactive dashboard is provided as a Power BI Desktop (.pbix) file within this repository.
